@@ -1,0 +1,10 @@
+name: CI/CD Pipeline # Workflow name
+
+on: push # Trigger when code is pushed
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
